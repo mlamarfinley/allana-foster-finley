@@ -1067,6 +1067,16 @@ a { color: inherit; }
   padding: clamp(1.6rem, 4vw, 2.6rem);
   box-shadow: var(--shadow);
 }
+
+.form-card--embed { padding: .6rem; overflow: hidden; }
+.form-card--embed iframe {
+  display: block;
+  width: 100%;
+  height: min(72vh, 34rem);
+  border: 0;
+  border-radius: 1.1rem;
+}
+.form-card--embed .form-note { margin: .8rem .9rem .6rem; }
 .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.1rem; }
 .form-grid .full { grid-column: 1 / -1; }
 @media (max-width: 33rem) { .form-grid { grid-template-columns: 1fr; } }
